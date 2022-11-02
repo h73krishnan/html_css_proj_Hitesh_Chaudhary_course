@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    .nav_logo{
+        float: left;
+        position: absolute;
+        left: 100px;
+        top: 30px;
+    }
+    .nav_logo > img{
+        height: 40px;
+    }
+    .nav_list {
+        position: absolute;
+        left: 360px;
+        top: 30px;
+    }
+    .nav_list > ul{
+        float: left;
+        list-style:none;
+    }
+    .list-item {
+        float: left;
+        font-size: 20px;
+        font-family: arial;
+        margin-left: 50px;
+    }
+    .list-item:nth-child(1){
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .nav_search{
+        float: left;
+        position: absolute;
+        left: 1300px;
+    }
+    .nav_search > div:nth-child(1){
+        position: absolute;
+        top: 48px;
+        right: 150px;
+        font-size: 20px;
+    }
+    .nav_search > div:nth-child(2){
+        position: absolute;
+        top: 46px;
+        right: 50px;
+    }
+    .nav_search > div:nth-child(2) > button{
+        border-radius: 5px;
+        padding:5px;
+        padding: 0 20px;
+    }
+    .person-content {
+        position: absolute;
+        top: 110px
+    }
+    .person-content div > img{
+        width: 340px;
+    }
+    .person-content div:nth-child(1){
+        position: relative;
+        top: 200px;
+        left: 220px;
+        z-index: -1; 
+    }
+    .person-content div:nth-child(2){
+        position: relative;
+        top: -290px;
+        left: 160px;
+    }
+    .content{
+        position: absolute;
+        left: 600px;
+        top: 120px;
+        width: 750px;
+        height: 400px;
+    }
+    .globe {
+        position: relative;
+        left: 140px;
+    }
+    .globe > img{
+        width: 60px;
+    }
+    .star1 {
+        position: relative;
+        left: 550px;
+        top: 50px;
+    }
+    .star1 > img {
+        width: 60px;
+    }
+    .person-heading {
+        font-size: 50px;
+        text-align: center;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .person-story {
+        text-align: center;
+        position: relative;
+        top: -30px;
+    }
+    .email-join-button {
+        text-align: center;
+    }
+    .email-button{
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
+    .join-button {
+        background-color: #000;
+        color: #fff;
+        padding: 7px 15px;
+        border-radius: 5px;
+    }
+    .star2 {
+        position: relative;
+        top: 60px;
+    }
+    .star2 > img {
+        width: 50px;
+    }
+    .contact{
+        text-align: center;
+        position: relative;
+        top: 20px;
+        left: 60px; 
+    }
+    .list-icons {
+        list-style: none;  
+        position: relative;
+        float:left;
+        left: 100px;
+        margin-left: 30px;
+    }
+    
+</style>
+                    
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <section aria-label="navbar">
+            <div class="nav">
+                <div class="nav_logo">
+                    <img src="./assets/Logo.png" alt="">
+                </div>
+                <div class="nav_list">
+                    <ul>
+                        <li class="list-item">Home</li>
+                        <li class="list-item">Female</li>
+                        <li class="list-item">Male</li>
+                        <li class="list-item">FAQ</li>
+                        <li class="list-item">About</li>
+                    </ul>
+                </div>
+                <div class="nav_search">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass" class="search"></i>
+                    </div>
+                    
+                    <div>
+                        <button>Search</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Star Poster section  -->
+        <section aria-label="person-content">
+            <section aria-label="star-person">
+                <div class="person-content">
+                    <div>
+                        <img src="./assets/squares.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./assets/Image.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section aria-label="content">
+                <div class="content">
+                    <span class="globe">
+                        <img src="./assets/globe.png" alt="">
+                    </span>
+                    <span class="star1">
+                        <img src="./assets/start.png" alt="">
+                    </span>
+                    <div class="person-heading">
+                        <h1>
+                            What's the trend in 2022 ?
+                        </h1>
+                    </div>
+                    <div class="person-story">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente aspernatur, minima doloribus ducimus, tempora vero, beatae cum aut cumque voluptate aliquam assumenda saepe consequuntur nesciunt in alias amet. Sequi, accusamus.
+                        </p>
+                    </div>
+                    <div class="email-join-button">
+                        <button class="email-button">Email Address</button>
+                        <button class="join-button">Join Now</button>
+                    </div>
+                    <span class="star2">
+                        <img src="./assets/start.png" alt="">
+                    </span>
+                    <div class="contact">
+                        <h4>Contact us</h4>
+                    </div>
+                    <div class="list-icons">
+                        <ul>
+                            <li class="list-icons">
+                                <img src="./assets/Group.png" alt="">
+                            </li>
+                            <li class="list-icons">
+                                <img src="./assets/Group (1).png" alt="">
+                            </li>
+                            <li class="list-icons">
+                                <img src="./assets/Group (2).png" alt="">
+                            </li>
+                            <li class="list-icons">
+                                <img src="./assets/Group (3).png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>
